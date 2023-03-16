@@ -1,0 +1,139 @@
+
+ /* demo-2 */
+
+
+
+ html {
+    background-color: #ecf9ff;
+  }
+  
+  body {
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+  }
+  
+  .main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main h1 {
+      font-size: 24px;
+      font-weight: 400;
+      padding-left: 10px;
+      margin-left: 15px;
+      border-left: 4px solid;
+      border-image: linear-gradient(orange, orangered );
+      border-image-slice: 1;
+     
+  }
+  
+  img {
+    height: 150px;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  
+  .btn {
+    color: #000000;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: orangered transparent;
+  }
+  
+  .btn:hover {
+    /* background-color: rgba(255, 255, 255, 0.12); */
+  background-color: orangered;
+  color: #ffffff;
+  transition: 0.5s;
+  font-weight: bold;
+  /* transform: scale(0.9); */
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .cards_item:hover .card_title a{
+    color: orangered;
+  }
+  .cards_item:hover .card_image{
+    opacity: 0.5;
+    transition: 1s;
+  }
+ 
+  
+  
+  .card_content {
+    /* width: 230px; */
+      padding: 1rem;
+    /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.35);
+  }
+  
+  .card_title {
+      color: #000000;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      padding-bottom: 30px;
+      
+    }
+    
+    .card_title a{
+    text-decoration: none;
+}
+
+.card_text {
+    color: #000000;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 640px) {
+    .cards_item {
+        width: 50%;
+    }
+    .cards{
+        flex-direction: column;
+      flex-wrap: wrap; 
+    }
+}
+
+@media screen and (max-width: 56rem) {
+  .cards_item {
+      width: 33.3333%;
+    }
+    .cards{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+}

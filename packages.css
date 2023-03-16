@@ -1,0 +1,119 @@
+/* *,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} */
+.logo-img{
+  width: 100%;
+  height: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ .s-text{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+ }
+ .pack-clr{
+    color: orangered;
+    font-size: larger;
+    padding-bottom: 0px;
+ }
+ .h-text{
+    font-size: xx-large;
+ }
+ .heading-title-R {
+font-size: 20px;
+ }
+ .parent-div{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(239, 255, 239);
+    margin: 1% 20%;
+    border-radius: 10px;
+ }
+ .box-img{
+    height: auto;
+    width: 130px;
+}
+ .peren-child-div{
+    height: 120px;
+    flex-direction: column;
+    background-color: bisque;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 21px 40px;
+
+ }
+ .icon-list-items{
+   list-style-type: none;
+   text-align: start;
+   font-size: larger;
+ }
+ .icon-list-item span{
+    font-size: 15px;
+ }
+ .icon-list-icon{
+    color: rgb(25, 255, 25);
+ }
+ .ul-container{
+    display:flex ;
+ }
+ .price-div{
+
+margin-right: 15px;
+
+ }
+ .sup-text{
+    font-size:10px;
+    font-weight: bold;
+ }
+ .heading-title-P{
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .heading-widget-container{
+    font-size: 10px;
+    font-weight: bold;
+ }
+ .button-wrapper{
+    background-color: orange;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    
+ }
+ .button-wrapper:hover{
+  background-color: orangered;
+  transition: 0.5s;
+}
+ .button-link{
+    text-decoration: none;
+
+ }
+ .button-text{
+    color: white;
+    font-size: 15px;
+ }
+ 
+
+ @media screen and (max-width: 1430px) {
+    .parent-div{
+
+        margin: 1% 20%;
+        flex-wrap: wrap;
+    }
+    .peren-child-div{
+        width: 100%;
+        padding: auto;
+    }
+    .ul-container{
+        margin-right:15px ;
+        
+    }
+  }
+ 
+
